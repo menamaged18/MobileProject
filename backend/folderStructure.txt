@@ -1,0 +1,39 @@
+my back-end structure:
+src
+-> config
+--> .env.dev
+-> DB
+--> model
+---> store.model.js
+---> product.model.js
+---> counter.model.js
+---> inventory.model.js // connect between store and product
+---> User.model.js
+--> connection.js
+--> db.service.js
+-> middleware
+--> auth.middleware.js
+--> validation.middleware.js
+-> modules
+--> auth
+--->  service 
+----> login.service.js
+----> registration.service.js
+---> auth.controller.js
+---> auth.validation.js
+--> user
+---> service
+----> user.service.js
+---> user.controller.js
+--> store
+---> service
+----> store.service.js
+---> store.controller.js
+-> utilis
+--> response
+---> error.response.js
+---> success.response.js
+--> security
+---> hash.security.js
+---> token.security.js
+-> app.controller.js
